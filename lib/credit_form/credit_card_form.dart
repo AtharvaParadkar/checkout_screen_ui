@@ -445,7 +445,7 @@ class CardTypeRegs {
   static final RegExp _amex = RegExp(r'^3[47][0-9]{0,}$');
   static final RegExp _diners = RegExp(r'^3(?:0[0-59]{1}|[689])[0-9]{0,}$');
   static final RegExp _jcb = RegExp(r'^(?:2131|1800|35)[0-9]{0,}$');
-  static final RegExp _union = RegExp(r'^(62|88)\d+s');
+  static final RegExp _union = RegExp(r'^(62|88)\d+$');
 
   static CardBrand findBrand(String cardNUmber) {
     if (_visa.matchAsPrefix(cardNUmber) != null) return CardBrand.visa;
