@@ -226,7 +226,7 @@ class CheckoutPage extends StatelessWidget {
                       ),
                     if (data._displayCashPrice)
                       Text(
-                        '\$${data.cashPrice!.toStringAsFixed(2)}',
+                        '\u{20B9}${data.cashPrice!.toStringAsFixed(2)}',
                         style: const TextStyle(
                             fontStyle: FontStyle.italic, color: Colors.grey),
                       ),
