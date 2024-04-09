@@ -47,14 +47,14 @@ class _TaxListItemState extends State<_TaxListItem> {
                 Expanded(
                   flex: 1,
                   child: Text(
-                    '$taxPercent%',
+                    '₹taxPercent%',
                     textAlign: TextAlign.end,
                   ),
                 ),
                 Expanded(
                   flex: 1,
                   child: Text(
-                    '\$' + taxAmount,
+                    '\u{20B9}' + taxAmount,
                     textAlign: TextAlign.end,
                   ),
                 ),
