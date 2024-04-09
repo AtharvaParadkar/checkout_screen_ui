@@ -32,8 +32,8 @@ class FormValidator {
   String? validatePhone(String input) {
     const pattern = r'(^[0-9]{10}$)'; // 2345678901
     final regExp = RegExp(pattern);
-    const pattern2 = r'(^\d{3}-\d{3}-\d{4}$)'; //234-567-8901
-    final regExp2 = RegExp(pattern2);
+    //const pattern2 = r'(^\d{3}-\d{3}-\d{4}$)'; //234-567-8901
+    //final regExp2 = RegExp(pattern2);
 
     if (input.isEmpty) {
       return 'Entry Required';
