@@ -70,7 +70,7 @@ class _ChargeAmountDisplayState extends State<_ChargeAmountDisplay> {
         children: [
           const Text('Charge Amount '),
           Text(
-            '\$${widget._viewModel.data.totalPrice}',
+            '\u{20B9}${widget._viewModel.data.totalPrice}',
             style: const TextStyle(
                 color: Colors.green, fontSize: 24, fontWeight: FontWeight.bold),
           ),
