@@ -10,7 +10,7 @@ class CreditCardForm extends StatefulWidget {
   /// necessary to complete a typical credit card transaction
   const CreditCardForm({
     Key? key,
-    this.countries = const ['United States'],
+    this.countries = const ['India'],
     this.initEmail = '',
     this.initBuyerName = '',
     this.initPhone = '',
@@ -115,7 +115,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
       cCardNumber.text = '4242 4242 4242 4242';
       cExpiry.text = '01/24';
       cSecurity.text = '424';
-      cZip.text = '42424';
+      cZip.text = '424242';
       cPhone.text = '555-555-5555';
     }
   }
