@@ -84,7 +84,7 @@ class _PriceListItemState extends State<_PriceListItem> {
                   Expanded(
                     flex: 1,
                     child: Text(
-                      '\$${widget.priceItem.itemPriceString}',
+                      '\u{20B9}${widget.priceItem.itemPriceString}',
                       textAlign: TextAlign.end,
                     ),
                   ),
