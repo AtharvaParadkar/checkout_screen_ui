@@ -111,12 +111,12 @@ class _CreditCardFormState extends State<CreditCardForm> {
 
     if (widget.displayTestData) {
       cEmail.text = 'example@example.com';
-      cName.text = 'John Doe';
-      cCardNumber.text = '4242 4242 4242 4242';
+      cName.text = 'Ram';
+      cCardNumber.text = '1234 1234 1234 1234';
       cExpiry.text = '01/24';
       cSecurity.text = '424';
       cZip.text = '424242';
-      cPhone.text = '555-555-5555';
+      cPhone.text = '5555555555';
     }
   }
 
@@ -353,7 +353,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
               },
               inputFormatters: [
                 MaskedTextInputFormatter(
-                  mask: 'xxxxx',
+                  mask: 'xxxxxx',
                   separator: '',
                 )
               ],
@@ -390,7 +390,7 @@ class _CreditCardFormState extends State<CreditCardForm> {
                 },
                 inputFormatters: [
                   MaskedTextInputFormatter(
-                    mask: 'xxx-xxx-xxxx',
+                    mask: 'xxxxxxxxxx',
                     separator: '-',
                   )
                 ],
@@ -445,7 +445,7 @@ class CardTypeRegs {
   static final RegExp _amex = RegExp(r'^3[47][0-9]{0,}$');
   static final RegExp _diners = RegExp(r'^3(?:0[0-59]{1}|[689])[0-9]{0,}$');
   static final RegExp _jcb = RegExp(r'^(?:2131|1800|35)[0-9]{0,}$');
-  static final RegExp _union = RegExp(r'^(62|88)\d+$');
+  static final RegExp _union = RegExp(r'^(62|88)\d+s');
 
   static CardBrand findBrand(String cardNUmber) {
     if (_visa.matchAsPrefix(cardNUmber) != null) return CardBrand.visa;

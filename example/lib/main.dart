@@ -85,14 +85,14 @@ class MyDemoPage extends StatelessWidget {
 
       final String subtotal =
           (checkOutResult.subtotalCents / 100).toStringAsFixed(2);
-      print('Subtotal: \$$subtotal');
+      print('Subtotal: \u{20B9}$subtotal');
 
       final String tax = (checkOutResult.taxCents / 100).toStringAsFixed(2);
-      print('Tax: \$$tax');
+      print('Tax: \u{20B9}$tax');
 
       final String total =
           (checkOutResult.totalCostCents / 100).toStringAsFixed(2);
-      print('Total: \$$total');
+      print('Total: \u{20B9}$total');
     }
 
     /// REQUIRED: A list of what the user is buying

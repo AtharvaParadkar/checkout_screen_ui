@@ -39,7 +39,7 @@ class FormValidator {
       return 'Entry Required';
     } else if (input.length > 10) {
       return 'Maximum of 10 digits';
-    } else if (!(regExp.hasMatch(input) || regExp2.hasMatch(input))) {
+    } else if (!(regExp.hasMatch(input))) {
       return 'Only numeric digits accepted';
     } else {
       return null;
@@ -166,7 +166,8 @@ class PhoneSubmitRegexValidator extends RegexValidator {
   PhoneSubmitRegexValidator()
       : super(
             regexSource:
-                r'(^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$)');
+                r'^\d{10}$');
+                // r'(^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$)');
 }
 
 class CreditNumberSubmitRegexValidator extends RegexValidator {
@@ -196,7 +197,7 @@ class AddressCitySubmitRegexValidator extends RegexValidator {
 }
 
 class AddressPostalSubmitRegexValidator extends RegexValidator {
-  AddressPostalSubmitRegexValidator() : super(regexSource: r'^[0-9]{5}$');
+  AddressPostalSubmitRegexValidator() : super(regexSource: r'^[0-9]{6}$');
 }
 
 class AddressStateSubmitRegexValidator extends RegexValidator {

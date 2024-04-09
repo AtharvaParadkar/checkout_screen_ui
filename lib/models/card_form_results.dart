@@ -32,7 +32,7 @@ class CardFormResults {
   /// string representing billing country
   final String country;
 
-  /// 5 digit zip / postal code. numeric characters only and no spaces
+  /// 6 digit zip / postal code. numeric characters only and no spaces
   final String zip;
 
   /// 10 digit phone number. numeric characters only and no spaces
